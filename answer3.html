@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>پاسخ مرحله ۳ | The Zero Secret</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f1f8e8;
+      color: #173B2A;
+      font-family: Tahoma, Arial, sans-serif;
+      line-height: 2;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 40px 22px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .number {
+      font-size: 14px;
+      color: #315C43;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin: 8px 0;
+      color: #123524;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      color: #315C43;
+      font-size: 15px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #c8dcbc;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 10px 30px rgba(23, 59, 42, 0.12);
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 0;
+      color: #123524;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 18px 0;
+      color: #173B2A;
+    }
+
+    strong {
+      color: #0E2B1D;
+    }
+
+    .password-box {
+      margin-top: 25px;
+      padding: 20px;
+      background: #f1f8e8;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      max-width: 400px;
+      padding: 13px;
+      margin-top: 12px;
+      border: 1px solid #9fbd9f;
+      border-radius: 8px;
+      font-size: 18px;
+      text-align: center;
+      color: #173B2A;
+      background: #ffffff;
+    }
+
+    button {
+      margin-top: 14px;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      background: #173B2A;
+      color: #ffffff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .error {
+      color: #8B3A3A;
+      margin-top: 10px;
+      display: none;
+      font-size: 14px;
+    }
+
+    #stage2 {
+      display: none;
+      margin-top: 30px;
+    }
+
+    .success {
+      padding: 15px 18px;
+      margin-bottom: 25px;
+      background: #e4f0d8;
+      border-radius: 10px;
+      color: #123524;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #315C43;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <div class="number">THE ZERO SECRET</div>
+      <h1>پاسخ مرحله ۳</h1>
+    </div>
+
+    <div class="card">
+
+      <!-- بخش وارد کردن رمز -->
+
+      <div id="passwordSection">
+
+        <h2> رمز مرحله ۳ را وارد کن</h2>
+
+        <p>
+          (رمز به کلمه می‌باشد.)
+        </p>
+
+        <div class="password-box">
+
+          <label for="password">رمز:</label>
+
+          <input
+            type="text"
+            id="password"
+            placeholder="رمز را وارد کن"
+            autocomplete="off"
+          >
+
+          <br>
+
+          <button onclick="checkPassword()">
+            ورود
+          </button>
+
+          <div class="error" id="error">
+            رمز اشتباه است. دوباره تلاش کن.
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- متن مرحله بعد از رمز صحیح -->
+
+      <div id="stage2">
+
+        <div class="success">
+           درسته! مرحله سوم هم با موفقیت حل شد.
+        </div>
+
+        <p>
+          تا الان با کمک شما به اطلاعات مهمی دست پیدا کردیم.
+          ویروس استاکس‌نت که یکی از پیشرفته‌ترین حملات سایبری در تاریخ بود،
+          با وجود قطع بودن اینترنت در سایت نطنز، از طریق یک فلش USB وارد شبکه شد
+          و از چند باگ ناشناخته در ویندوز استفاده کرد تا به کنترل‌گرهای صنعتی نفوذ کند.
+        </p>
+
+        <p>
+          برخی تئوری‌ها و تحلیل‌ها احتمال می‌دهند که مایکروسافت ممکن است
+          به‌طور مستقیم در این عملیات نقش داشته باشد.
+          این گمانه‌زنی‌ها به این دلیل مطرح شده‌اند که استاکس‌نت از چهار نقطه
+          آسیب‌پذیری ناشناخته در سیستم‌عامل ویندوز استفاده کرد و بستر اصلی
+          اجرای آن نیز ویندوز بود.
+          همچنین، امضای دیجیتال معتبری که معمولاً مخصوص نرم‌افزارهای
+          تأییدشده مایکروسافت است، در این ویروس وجود داشت.
+        </p>
+
+        <p>
+          ضمن اینکه برخی گزارش‌ها اشاره دارند که دولت آمریکا ممکن است
+          در پروژه‌هایی مثل استاکس‌نت، از ظرفیت شرکت‌هایی مانند مایکروسافت
+          استفاده کرده باشد.
+          با این که تاکنون مدرکی رسمی برای اثبات نقش مستقیم مایکروسافت وجود ندارد،
+          این گمانه‌زنی‌ها همچنان محل بحث محافل امنیتی و سایبری است.
+        </p>
+
+      </div>
+
+    </div>
+
+    <footer>
+      THE ZERO SECRET
+    </footer>
+
+  </div>
+
+
+  <script>
+
+    function checkPassword() {
+
+      const password =
+        document.getElementById("password").value.trim();
+
+      if (password === "مجوزمایکروسافت") {
+
+        document.getElementById("passwordSection").style.display = "none";
+
+        document.getElementById("stage2").style.display = "block";
+
+      } else {
+
+        document.getElementById("error").style.display = "block";
+
+      }
+    }
+
+
+    document.getElementById("password").addEventListener("keypress", function(event) {
+
+      if (event.key === "Enter") {
+        checkPassword();
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>
